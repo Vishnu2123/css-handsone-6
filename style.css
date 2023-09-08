@@ -1,0 +1,146 @@
+*{
+    margin: 0% ;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main-container{
+    background-color: yellow;
+    background-size: cover;
+    
+} 
+h1{
+text-align: center;
+
+}
+.parent{
+display: flex;
+justify-content: center;
+
+}
+.box{
+    background-color: aqua;
+    animation: sample 2s infinite alternate;
+}
+@keyframes sample {
+    0%{
+        transform: skew(-25deg);
+    }
+    100%{
+        transform: skew(30deg);
+    }   
+}
+.box1{
+    background-color: rgb(27, 198, 87);
+    animation: sample1 2s infinite alternate;
+}
+@keyframes sample1 {
+    0%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }   
+}
+.box2{
+    background-color: rgb(40, 13, 84);
+    animation: sample2 3s infinite forwards;
+}
+@keyframes sample2 {
+    0%{
+        transform: rotateZ(-300deg);
+    }
+    100%{
+        transform: rotateZ(300deg);
+    }
+    
+}
+.boox{
+    margin: 20px;
+    width: 77px;
+    height: 77px;
+}
+
+.box5{
+background-color: #18b554;
+animation: sample4 2s infinite  alternate;
+}
+@keyframes sample4{
+    0%{
+        tranfrom:roateZ(0,0);
+    }
+    100%{
+        transform:rotate(90deg);   
+    }
+}
+
+.box4{
+    background-color: #8f380a;
+animation: sample5 2s infinite  alternate;
+}
+@keyframes sample5{
+    0%{
+        tranfrom:roate(0,0);
+    }
+    100%{
+        transform:rotateY(70deg);  
+    }
+    
+}
+.box3{
+background-color: #4698b6;
+animation: sample6 2s infinite  alternate;
+}
+@keyframes sample6{ 
+0%{
+    tranfrom:roate(0,0);
+}
+100%{
+    transform:rotateX(50deg);   
+}
+
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+}
+ ol{
+  
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    flex-direction:column ;
+    
+} 
+.boxx{
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    transition-duration: 2s ;
+}
+.boxx1:hover{
+      width: 300px;
+}
+.boxx2:hover{
+    width: 300px;
+    height: 350px;   
+}
+.boxx3:hover{
+    width: 300px;
+    transition-timing-function: ease;
+}
+.boxx4:hover{
+    width: 300px;
+}
+.boxx5:hover{
+    width: 300px;
+    transition-timing-function: ease-in;
+}
+.boxx6:hover{
+    width: 300px;
+    transition-timing-function: ease-out;
+}
+.boxx7:hover{
+    width: 300px;
+    transition-timing-function: ease-in-out;
+}
